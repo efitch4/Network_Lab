@@ -1,0 +1,10 @@
+
+
+
+R1#terminal len 0
+R1#config t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R1(config)#int lo1001
+R1(config-if)#ip address 1.1.1.1 255.255.255.0
+R1(config-if)#end
+R1#

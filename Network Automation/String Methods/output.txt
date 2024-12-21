@@ -1,0 +1,1 @@
+ GigabitEthernet2       unassigned      YES NVRAM  administratively down down GigabitEthernet3       unassigned      YES NVRAM  administratively down down GigabitEthernet4       unassigned      YES NVRAM  administratively down down Loopback1001           1.1.1.1         YES NVRAM  up                    up
