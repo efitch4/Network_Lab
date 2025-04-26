@@ -1,5 +1,0 @@
-inventory:
-  plugin: SimpleInventory
-  options:
-    host_file: "C:/Users/Eric/OneDrive/Desktop/pypro/projects/hosts.yaml"
-    group_file: "C:/Users/Eric/OneDrive/Desktop/pypro/projects/groups.yaml"

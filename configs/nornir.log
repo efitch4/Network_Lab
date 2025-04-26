@@ -1,0 +1,2 @@
+2024-12-01 09:11:56,499 -  nornir.core -     INFO -        run() - Running task 'backup_config' with args {} on 1 hosts
+2024-12-01 09:12:00,241 -  nornir.core -     INFO -        run() - Running task 'verify_config' with args {} on 1 hosts

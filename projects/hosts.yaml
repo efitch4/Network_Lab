@@ -1,5 +1,0 @@
-Router1:
-  hostname: 192.168.1.157
-  platform: ios
-  groups:
-    - routers

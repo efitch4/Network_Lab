@@ -1,0 +1,4 @@
+routers:
+  username: admin
+  password: admin
+  platform: ios
