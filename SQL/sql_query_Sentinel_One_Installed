@@ -1,0 +1,18 @@
+SELECT 
+    SystemInfo.WORKSTATIONNAME AS "Workstation", 
+    sl.softwarename AS "Software Name",
+    LONGTODATE(MAX(ah.audittime)) AS "Last Scanned On"  -- Fetching the last scan time
+FROM 
+    SystemInfo
+LEFT JOIN 
+    softwareinfo si ON SystemInfo.WORKSTATIONID = si.workstationid
+LEFT JOIN 
+    softwarelist sl ON si.softwareid = sl.softwareid
+LEFT JOIN 
+    lastauditinfo la ON SystemInfo.WORKSTATIONID = la.workstationid
+LEFT JOIN 
+    audithistory ah ON la.last_auditid = ah.auditid
+WHERE 
+    LOWER(sl.softwarename) = 'sentinel agent'
+GROUP BY 
+    SystemInfo.WORKSTATIONNAME, sl.softwarename;
